@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Odin Library</title>
+    <meta charset = "utf-8">
+    <script src = "myscripts.js" defer></script>
+    <link rel = "stylesheet" href= "styles.css">
+  </head>
+
+  <body>
+    <div class = "library"></div>
+      <button id = "open">Add Book</button>
+    <div id ="modalContainer">
+      <div id = "modal">
+        <form id = "bookInput">
+          <div class = "details">
+          <label for = "title">Title:</label>
+          <input type = "text" id = "titleInput" name = "title"><br>
+          </div>
+          <div class = "details">
+          <label for = "author">Author:</label>
+          <input type = "text" id = "authorInput" name = "title"><br>
+          </div>
+          <div class = "details">
+          <label for = "pages" id = "pages" name = "pages">Pages:</label>
+          <input type = "text" id = "pagesInput" name = "pages"><br>
+          </div>
+          <div class = "details">  
+          <label for = "status" id = "status" name = "status">Read/Not Read</label>
+          <input type = "text" id = "statusInput" name = "status">
+          </div>
+        </form>
+        <div class = buttonPanel>
+        <button id = "cancel" onclick = "cancel()">Cancel</button>
+        <button id = "close" onclick="update()">Add</button>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
